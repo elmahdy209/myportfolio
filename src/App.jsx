@@ -4,7 +4,7 @@ import Hero from "./components/2-hero/Hero";
 import Main from "./components/3-main/Main";
 import Contact from "./components/4-contact/Contact";
 import Footer from "./components/5-footer/Footer";
-import Skills from "./components/5-skills/Skill";
+import Skills from "./components/6-skills/Skill";
 import Calc from './components/calc/Calc'
 import { useEffect,useState } from "react";
 import Todo from "./components/todo/Todo";

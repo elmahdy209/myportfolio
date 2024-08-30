@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [showModal, setshowModal] = useState(false);
   const [isLightMode, setIsLightMode] = useState(() => {
@@ -33,17 +33,17 @@ const Header = () => {
       <nav>
         <ul className="flex">
           <li>
-            <a href="/">Home  </a>
+            <a href="/">Home</a>
           </li>
           
           <li>
             <a href="">Articles</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+           <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/skills">Skills</a>
+            <Link to='/skills'><a href="">Skills</a></Link>
           </li>
           <li>
             <a href="#contact">Contact</a>
