@@ -1,0 +1,40 @@
+/*===========================
+Content Of This CSS File
+=============================
+1-footer style
+2-footer-links style
+3-footer-cr
+=============================*/
+.footer {
+    justify-content: space-between;
+    color: var(--subtitle);
+    margin: 2rem 2rem;
+    font-size: 0.9rem;
+    font-weight:500;
+    padding: 0.3rem;
+    
+}
+.footer section.footer-links ul.flex {
+    gap: 1rem;
+}
+.footer section.footer-links ul li a:hover {
+color: var(--blue);
+font-size: 1rem;
+
+}
+.footer section.footer-cr p {
+    color: rgba(154, 145, 145, 0.826);
+}
+
+@media (max-width:700px) {
+    .footer {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .footer section.footer-cr p {
+        font-size: 0.6rem;
+    }
+  }
+  /*End Media Query*/
+
+

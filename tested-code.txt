@@ -1,0 +1,269 @@
+/*start hero tested code*/
+/*start hero tested html code*/
+        <section className='hero-container flex '>
+            <div className='me '>
+                <div className='image'>
+                <img src="/public/me.png" alt="me.png" />
+                <span className='icon-verified '></span>
+                </div>
+                <h1>Innovative Front-End Developer | Crafting Exceptional Web Experiences</h1>
+                <p>I am a professional Front-End Developer with a passion for creating visually stunning, user-friendly web applications. With extensive experience in HTML, CSS, JavaScript, and modern frameworks like React and Angular</p>
+                <div className='social-media flex'>
+                    <a  className='icon-x' href=""></a>
+                    <a  className='icon-instagram' href=""></a>
+                    <a  className='icon-github' href=""></a>
+                    <a  className='icon-linkedin' href=""></a>
+                </div>
+            </div>
+            <div className='animation'>animation</div>
+        </section>
+/*end hero tested html code*/
+
+/* start hero tested css code*/
+/*Start Section*/
+section {
+  margin: 2rem auto;
+  width: 95%;
+  justify-content: space-between;
+  height: 25rem;
+}
+/*End Section*/
+/*Start Me*/
+section .me {
+  height: 21rem;
+  margin-right: 1%;
+  width: 55%;
+  padding: 1.5rem 2rem;
+  background-color: var(--cards);
+}
+.me .image img {
+  width: 25%;
+  /* padding-top: 1rem; */
+}
+
+.me .image .icon-verified {
+    color:rgb(24, 119, 242);
+    position: relative;
+    bottom: 1rem;
+    
+}
+.me h1 {
+    /* width: 95%; */
+    margin: 1rem 0;
+    color: var(--title);
+}
+.me p{
+    /* width: 80%; */
+    margin: 1rem 0;
+    color: var(--subtitle);
+}
+.me .social-media {
+    margin: 1.5rem 0;
+    color: var(--subtitle);
+    /* justify-content: space-around; */
+}
+.me .social-media a {
+    margin-right: 1rem;
+}
+.animation {
+  background-color: var(--cards);
+  margin-left: 1%;
+  height: 21rem;
+  /* width: 48%; */
+  padding: 1.5rem 2rem;
+}
+/*End Me*/
+
+/*end hero tested css code*/
+/*end hero tested code*/
+===============================================
+/*        <div className="cards main-card-1">
+          <img src="/1.jpg" alt="lp1.jpg" />
+          <div className="text">
+            <h1>React Project</h1>
+            <style></style>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className=" more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-2">
+          <img src="/2.jpg" alt="lp2.jpg" />
+          <div className="text">
+            <h1>React && CSS Project</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className="more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-3">
+          <img src="/3.jpg" alt="lp3.jpg" />
+          <div className="text">
+            <h1>CSS Project</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className="more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-4">
+          <img src="/4.jpg" alt="lp4.jpg" />
+          <div className="text">
+            <h1>React Project</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className=" more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-5">
+          <img src="/5.jpg" alt="lp5.jpg" />
+          <div className="text">
+            <h1>CSS Project</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className="more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-6">
+          <img src="/6.jpg" alt="lp6.jpg" />
+          <div className="text">
+            <h1>JavaScript Project</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className=" more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-7">
+          <img src="/7.jpg" alt="lp7.jpg" />
+          <div className="text">
+            <h1>Node && Express</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className="more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-8">
+          <img src="/8.jpg" alt="lp8.jpg" />
+          <div className="text">
+            <h1>React && MUI</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className="more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>
+        <div className="cards main-card-9">
+          <img src="/9.jpg" alt="lp9.jpg" />
+          <div className="text">
+            <h1>HTML && CSS</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              explicabo esse beatae quas dignissimos
+            </p>
+          </div>
+          <div className="card-icons  flex">
+            <div className="icons  flex">
+              <a href="" className="icon-link1"></a>
+              <a href="" className="icon-github"></a>
+            </div>
+
+            <a href="" className="more flex">
+              <p>more</p>
+              <span className="icon-arrow-right2"></span>
+            </a>
+          </div>
+        </div>*/ 

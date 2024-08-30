@@ -1,0 +1,64 @@
+/*
+=======================
+Content of This File
+=====================================
+1-Hero Design.                      =
+2-avater Design.                    =
+3-h1 + p + icons                    =
+4-Responsive Design (Media Querry). = 
+=====================================
+*/
+section.hero {
+  margin-top: 2.4rem;
+}
+section.hero .left-section {
+  width: 55%;
+  flex-grow: 1;
+}
+section.hero .image {
+  align-items: end;
+  gap: 0.6rem;
+}
+section.hero .image img {
+  width: 15%;
+  box-shadow: 1px 1px 40px var(--bgheader) inset;
+  border: 1px solid rgb(3, 116, 116);
+  border-radius: 50%;
+  padding: 1.5px;
+}
+section.hero .image span.icon-verified {
+  color: var(--fccolor);
+}
+section.hero .left-section h1 {
+  color: var(--title);
+  margin: 1rem 0;
+  line-height: 2rem;
+  width: 60%;
+}
+section.hero .left-section p {
+  color: var(--subtitle);
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  width: 75%;
+}
+
+section.hero .left-section .icons {
+  color: var(--subtitle);
+  gap: 15px;
+}
+/*Start animation*/
+div.animation {
+  margin-right: 4rem;
+}
+/*End Animation*/
+/*Start Media Query*/
+@media (max-width:800px) {
+  .animation {
+    display: none;
+  }
+  section.hero .left-section  h1 , section.hero .left-section p{
+    width: 100%;
+  }
+}
+/*End Media Query*/

@@ -1,0 +1,127 @@
+/* ===========================
+Content Of This CSS File
+1-main left section
+2-main right section
+=============================  */
+
+main.flex {
+  gap: 3rem;
+  align-items: start;
+  
+}
+
+/*Start Left Section*/
+
+main section.left-section.flex {
+  flex-direction: column;
+  gap: 10px;
+  width: 11rem;
+}
+
+main section.left-section button {
+  background-color: rgb(36, 37, 46,1);
+  padding: 0.75rem 0;
+  width: 11rem;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  color: rgb(161 161 170);
+  transition: 0.3s;
+}
+main section.left-section button.active {
+    opacity: 1;
+    letter-spacing: 0.6px;
+    font-size: 1.1rem;
+    color: rgb(244 244 245);
+    border: 1px solid var(--blue);
+}
+
+main section.left-section button:not(.active):hover {
+  color:  rgb(244 244 245);
+  border: 1px solid var(--blue);
+  font-size: 1rem;
+  opacity: 1;
+  box-shadow: 1px 1px 15px rgba(32, 99, 126, 0.399) inset;
+}
+/*End Left Section*/
+
+/*Start Right Section*/
+main section.right-section {
+  flex-grow: 1;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill , minmax(300px,auto));
+}
+main section.right-section .cards {
+  border: 1px solid rgb(29, 44, 56);
+  border-radius: 5px;
+  /* padding: 1px; */
+  transition: 0.5s;
+  max-width:100%;
+  background-image: linear-gradient(rgba(255,  255 , 255 , 0.05),rgba(255 ,  255 ,  255 , 0.05));
+}
+main section.right-section .cards:hover {
+    rotate: 5deg;
+    border: 1px solid rgb(62, 142, 204);
+    scale: 1.01;
+}
+main section.right-section .cards img {
+  max-width:100%;
+  border-radius:5px;
+  margin-bottom: 0.6rem;
+}
+main section.right-section .cards .text {
+  margin: 0.6rem 0.5rem;
+}
+main section.right-section .cards h1 {
+  margin-bottom: 0.8rem;
+  color: var(--title);
+}
+main section.right-section .cards .text p {
+  color: var(--subtitle);
+  width: 97%;
+}
+main section.right-section .cards .card-icons {
+  justify-content: space-between;
+  margin: 1rem 0.8rem;
+}
+main section.right-section .cards .card-icons .icons {
+  
+  gap: 0.7rem;
+  font-size: 1.8rem;
+
+}
+main section.right-section .cards .card-icons .icons a {
+    transition: 0.3s;
+    color: var(--subtitle);
+}
+main section.right-section .cards .card-icons .icons a:hover {
+color: var(--title);
+}
+main section.right-section .cards .card-icons .more {
+  color: var(--blue);
+  gap: 0.4rem;
+  
+}
+main section.right-section .cards .card-icons .more  p{
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+/*End Right Section*/
+/*Start Media Query*/
+@media (max-width:600px) {
+  main.flex {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main section.left-section.flex {
+    width: 100%;
+    flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+
+}
+/*End Media Query*/

@@ -1,0 +1,122 @@
+/*===========================
+Content Of This CSS File
+=============================
+1-contact-head
+2-left section (form)
+3-right section (animation)
+=============================*/
+/*Start contact-head*/
+.contact-head {
+  margin: 1rem auto;
+}
+
+.contact-head h1 {
+  margin-bottom: 1rem;
+  font-size: 2.1rem;
+  gap: 1rem;
+  color: var(--title);
+}
+.contact-head h1 span {
+  color: var(--subtitle);
+  font-size: 2rem;
+}
+.contact-head p {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+}
+/*End contact-head*/
+/*Start left section (contact-main)*/
+section.contact-main {
+  gap: 1rem;
+}
+section.contact-main form {
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: start;
+  gap: 2rem;
+  max-width: 100%;
+}
+section.contact-main form button {
+  background-color: rgb(36, 37, 46, 1);
+  padding: 0.65rem 0;
+  width: 8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: 1px solid #625e5eac;
+  color:  rgb(244 244 245);
+  transition: 0.5s;
+}
+section.contact-main form label {
+  margin-right: 2.2rem;
+  color: var(--subtitle);
+  font-size: 1rem;
+}
+section.contact-main form #email {
+  all: unset;
+  height: 2rem;
+  background-color: rgb(36, 37, 46, 1);
+  width: 20rem;
+  border-radius: 0.3rem;
+  border: 1px solid #969292;
+}
+section.contact-main form #email:focus {
+  border: 1px solid var(--blue);
+  box-shadow: 0 0 10px rgba(60, 63, 86, 0.524);
+}
+section.contact-main form textarea {
+  height: 11rem;
+  background-color: rgb(36, 37, 46, 1);
+  border-radius: 0.3rem;
+  width: 20rem;
+  color: var(--title);
+  resize: vertical;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+section.contact-main form textarea:focus {
+  outline: none !important;
+  border: 1px solid var(--blue);
+  box-shadow: 0 0 10px rgba(60, 63, 86, 0.524);
+}
+.done-animation h1{
+  gap: 0px;
+  animation: message-move 2s ;
+}
+@keyframes message-move {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*End left section (contact-main)*/
+/*Start Right section (contact-animation)*/
+section.contact-animation{
+  width: 40rem;
+  margin-bottom: 2rem;
+}
+/*End Right section (contact-animation)*/
+/*Start Media Query*/
+@media (max-width:900px) {
+  section.contact-animation {
+    display: none;
+  }
+  section.contact-main form.flex {
+    align-items: center;
+  }
+  section.contact-main form.flex div.flex{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+}
+@media (max-width:400px){
+  section.contact-main form #email ,  section.contact-main form  textarea {
+    width: 110%;
+  }
+}
+/*End Media Query*/

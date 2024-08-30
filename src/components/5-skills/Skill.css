@@ -1,0 +1,86 @@
+main.skills {
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
+    
+  }
+  /*Start Right Section*/
+main.skills section.right-section {
+  flex-grow: 1;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill , minmax(250px , auto-fill));
+}
+main.skills section.right-section .cards {
+  border: 1px solid rgb(29, 44, 56);
+  border-radius: 5px;
+  /* padding: 1px; */
+  transition: 0.5s;
+  max-width:100%;
+  background-image: linear-gradient(rgba(255,  255 , 255 , 0.05),rgba(255 ,  255 ,  255 , 0.05));
+}
+main.skills section.right-section .cards:hover {
+    rotate: 5deg;
+    border: 1px solid rgb(62, 142, 204);
+    scale: 1.01;
+}
+main.skills section.right-section .cards img {
+  max-width:100%;
+  border-radius:5px;
+  margin-bottom: 0.6rem;
+}
+main.skills section.right-section .cards .text {
+  margin: 0.6rem 0.5rem;
+}
+main.skills section.right-section .cards h1 {
+  margin-bottom: 0.8rem;
+  color: var(--title);
+}
+main.skills section.right-section .cards .text p {
+  color: var(--subtitle);
+  max-width: 100%;
+  width: auto;
+  line-height: 1.8rem;
+  
+}
+main.skills section.right-section .cards .card-icons {
+  justify-content: space-between;
+  margin: 1rem 0.8rem;
+}
+main.skills section.right-section .cards .card-icons .icons {
+  
+  gap: 0.7rem;
+  font-size: 1.8rem;
+
+}
+main.skills section.right-section .cards .card-icons .icons a {
+    transition: 0.3s;
+    color: var(--subtitle);
+}
+main.skills section.right-section .cards .card-icons .icons a:hover {
+color: var(--title);
+}
+main.skills section.right-section .cards .card-icons .more {
+  color: var(--blue);
+  gap: 0.4rem; 
+}
+main.skills section.right-section .cards .card-icons .more  a{
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+/*End Right Section*/
+/*Start Media Query*/
+@media (max-width:600px) {
+  main.skills {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main.skills section.left-section.flex {
+    width: 100%;
+    flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+
+}
+/*End Media Query*/

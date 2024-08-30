@@ -1,0 +1,141 @@
+/*
+=======================
+Content of This File
+=====================================
+1-Header Design.                    =
+1-nav Design.                       =
+1-Responsive Design (Media Querry). = 
+1-Modal Design.                     = 
+=====================================
+*/
+
+/*Start Header*/
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+/*End Header*/
+header button {
+  /* margin-top: 2rem; */
+  font-size: 1.2rem;
+}
+header .icon-navicon {
+  display: none;
+}
+/*Start nav*/
+header.flex nav {
+  /* display: flex; */
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  background-color: var(--bgheader);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 40px rgba(56, 53, 50, 0.259);
+}
+header ul.flex {
+  margin: auto auto;
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+header button.icon-navicon,
+header button.mode {
+  background-color: var(--bgheader);
+  color: var(--subtitle);
+  height: 2.4rem;
+  text-align: center;
+  width: 2.4rem;
+  justify-content: center;
+  border: 1px solid rgb(244, 165, 96, 0.249);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+header button.mode .icon-sun {
+  color: rgba(255, 190, 70, 0.919);
+  font-weight: 1000;
+}
+header button.icon-navicon:hover,
+header button.mode:hover {
+  color: var(--title);
+}
+/*End  Header*/
+/*Start Responsive (Media Query)*/
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  header .icon-navicon {
+    display: block;
+  }
+  header .fixed {
+    justify-content: start;
+  }
+  header .fixed ul.modal {
+    min-width: 50%;
+    position: relative;
+    /* left: -50%; */
+    right: 1%;
+  }
+}
+/*End Responsive (Media Query)*/
+/*start modal*/
+
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  backdrop-filter: blur(2px);
+  
+  background-color: rgb(40, 40, 48, 0.91);
+}
+header .fixed ul.modal {
+  background-color: var(--secondary);
+  width: 80%;
+ margin-inline: auto;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  animation: modal 0.77s 1;
+}
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+header .fixed ul.modal li:first-child {
+  border: none;
+  text-align: right;
+  padding-bottom: 0rem;
+  padding-top: 0.2rem;
+ 
+}
+header .fixed ul.modal li .icon-close2 {
+  font-size: 1.3rem;
+  color: crimson;
+  transition: 0.3s;
+}
+header .fixed ul.modal li .icon-close2:hover {
+  font-size: 1.7rem;
+  rotate: 180deg;
+}
+/*end modal*/
+/*Start Animation*/
+@keyframes modal {
+  0% {scale: 0;}
+  65% {scale: 1.2;}
+  100% {scale: 1;}
+}
+/*Start Animation*/
