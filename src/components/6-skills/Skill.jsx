@@ -1,5 +1,6 @@
 
 import './Skill.css';
+import {Link} from 'react-router-dom';
 const Skill = () => {
     const description =
     "Lorem, ipsum dolorelit. Liberoexplicabo esse Lorem, ipsum dolorelit. ";
@@ -27,7 +28,7 @@ const Skill = () => {
                     </div>
 
                     <div className="more flex">
-                    <a href={item.path} className=" more">more</a>
+                    <Link to={item.path}><a href={item.path} className=" more">more</a></Link>
                     <span className="icon-arrow-right2"></span>
                   </div>
                   </div>
