@@ -11,7 +11,7 @@ const Footer = () => {
             </ul>
            </section>
            <section className='footer-cr'>
-            <p>&copy; 2024 Elmahdy Abdallah. All rights reserved.</p>
+            <p>&copy; 2024 Electron Team. All rights reserved.</p>
            </section>
         </div>
     );
