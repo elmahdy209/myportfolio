@@ -10,7 +10,7 @@ const Hero = () => {
                 <img src="./electron.jpg" alt="electron.jpg" />
                 <span className='icon-verified'></span>
             </div>
-            <h1>Innovative Front-End Developer | Crafting Exceptional Web Experiences</h1>
+            <h1>Innovative Full-Stack Developer | Crafting Exceptional Web Experiences</h1>
             <p>I am a professional Front-End Developer with a passion for creating visually stunning, user-friendly web applications. With extensive experience in HTML, CSS, JavaScript, and modern frameworks like React and Angular</p>
             <div className='icons flex'>
                 <a className='icon-x' href=""></a>
